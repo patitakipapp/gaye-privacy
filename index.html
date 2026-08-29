@@ -1,147 +1,282 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası - Gaye.</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #1a1a1a;
-            border-bottom: 2px solid #f1f5f9;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #334155;
-            margin-top: 30px;
-        }
-        .highlight {
-            background-color: #f8fafc;
-            padding: 15px;
-            border-left: 4px solid #334155;
-            margin: 20px 0;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #64748b;
-            text-align: center;
-        }
-        a {
-            color: #334155;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gaye. uygulamasının gizlilik politikası. Gaye. hiçbir kullanıcı verisi toplamaz; tüm veriler yalnızca cihazınızda saklanır.">
+<title>Gaye. Gizlilik Politikası</title>
+
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #666666;
+  --rule: #dddddd;
+  --panel-bg: #f4f7f4;
+  --panel-border: #cfe0cf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1116;
+    --fg: #e8eaed;
+    --muted: #9aa0a6;
+    --rule: #2a2f37;
+    --panel-bg: #121a14;
+    --panel-border: #2c4432;
+  }
+}
+
+body {
+  max-width: 820px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid var(--rule);
+}
+
+.small {
+  color: var(--muted);
+}
+
+.summary {
+  margin: 28px 0;
+  padding: 20px 24px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+}
+
+.summary p:first-child {
+  margin-top: 0;
+}
+
+.summary p:last-child {
+  margin-bottom: 0;
+}
+
+.en {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+a {
+  color: inherit;
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Gizlilik Politikası</h1>
-    <p>Son Güncelleme: 18 Mart 2026</p>
+<h1>Gaye. Gizlilik Politikası</h1>
+<p class="small"><strong>Son güncelleme: 29.08.2026</strong></p>
 
-    <p><strong>Gaye.</strong> mobil uygulaması ("Uygulama") olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası, Uygulama'yı kullanırken hangi verilerin işlendiğini, bu verilerin hangi amaçlarla kullanıldığını ve nasıl korunduğunu açıklamak amacıyla hazırlanmıştır.</p>
+<div class="summary">
+<p><strong>Kısaca:</strong> Gaye. hiçbir kişisel veri toplamaz.</p>
+<p>Hesap oluşturmanız gerekmez. Uygulama hiçbir sunucuya bağlanmaz. Seçtiğiniz gayeler, akşam değerlendirmeleriniz ve favori sözleriniz yalnızca kendi cihazınızda saklanır ve cihazınızdan hiçbir zaman çıkmaz. Reklam yok, takip yok, analitik yok, üçüncü taraf hizmet yok.</p>
+</div>
 
-    <div class="highlight">
-        <strong>Özet:</strong> Gaye. uygulamasında bazı kullanıcı verileri hesap oluşturma, giriş işlemleri, uygulama deneyiminin geliştirilmesi ve karakter analizi özelliklerinin çalışması için işlenir. Sohbet botu ile yaptığınız konuşmalar cihazınızda saklanır; bu konuşmalar tarafımızca kendi sunucularımızda depolanmaz. Yapay zeka özellikleri kapsamında OpenAI API kullanılmaktadır.
-    </div>
+<p>Bu gizlilik politikası, Gaye. mobil uygulamasının verilerinizi nasıl ele aldığını açıklar. Uygulamayı kullanarak bu politikada belirtilen esasları kabul etmiş olursunuz.</p>
 
-    <h2>1. Toplanan Veriler</h2>
-    <p>Uygulama kapsamında aşağıdaki veri türleri işlenir:</p>
-    <ul>
-        <li><strong>E-posta adresi</strong></li>
-        <li><strong>Kullanıcı adı</strong></li>
-        <li><strong>Kullanıcının seçtiği gayeler / kategori tercihleri</strong></li>
-        <li><strong>Karakter analizi özelliğiyle ilişkili uygulama verileri</strong></li>
-    </ul>
+<hr>
+  padding: 20px 24px;
+  background: var(--panel-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+}
 
-    <p>Bu veriler; kullanıcı hesabının oluşturulması ve yönetilmesi, giriş/kayıt işlemlerinin yürütülmesi, uygulama deneyiminin geliştirilmesi ve uygulama içindeki bazı özelliklerin çalıştırılması amacıyla kullanılır.</p>
+.summary p:first-child {
+  margin-top: 0;
+}
 
-    <h2>2. Verilerin Nerede Saklandığı</h2>
-    <p>Hesap oluşturma, giriş işlemleri, seçilen gayeler ve karakter analiziyle ilgili veriler <strong>Supabase</strong> altyapısı üzerinde saklanır.</p>
+.summary p:last-child {
+  margin-bottom: 0;
+}
 
-    <p><strong>Sohbet botu ile yaptığınız konuşmalar ise cihazınızda saklanır.</strong> Bu konuşmalar tarafımızca ayrıca kendi sunucularımızda depolanmaz.</p>
+.en {
+  color: var(--muted);
+  font-size: 15px;
+}
 
-    <h2>3. Yapay Zeka Özellikleri ve OpenAI Kullanımı</h2>
-    <p>Uygulamadaki yapay zeka destekli özellikler, örneğin <strong>rehber sohbet botu</strong> ve <strong>karakter analizi</strong>, <strong>OpenAI API</strong> kullanılarak çalıştırılır.</p>
+a {
+  color: inherit;
+}
+</style>
+</head>
 
-    <ul>
-        <li>Sohbet botu ile paylaştığınız içerikler, yapay zeka yanıtının üretilmesi amacıyla OpenAI hizmetine iletilir.</li>
-        <li>Bu konuşmalar tarafımızca kendi sunucularımızda depolanmaz.</li>
-        <li>Sohbet geçmişi cihazınızda tutulur.</li>
-        <li>OpenAI üzerinden işlenen veriler, OpenAI'ın kendi gizlilik politikası ve hizmet şartlarına tabidir: <a href="https://openai.com/policies/privacy-policy" target="_blank">openai.com/policies/privacy-policy</a></li>
-    </ul>
+<body>
 
-    <p>Yapay zeka özelliklerini kullanırken hassas kişisel bilgileri paylaşmamanızı öneririz.</p>
+<h1>Gaye. Gizlilik Politikası</h1>
+<p class="small"><strong>Son güncelleme: 29.08.2026</strong></p>
 
-    <h2>4. Abonelikler ve Ödeme İşlemleri</h2>
-    <p>Uygulama içerisinde abonelik özellikleri sunulabilir. Premium abonelik; <strong>Gaye Rehber sohbet botu için günlük 100 mesaj hakkı</strong>, <strong>karakter analizi özelliğinin açılması</strong> ve <strong>ek gaye kategorisi seçebilme</strong> gibi avantajlar sağlar. Ücretsiz planda ise bazı kullanım limitleri uygulanır.</p>
+<div class="summary">
+<p><strong>Kısaca:</strong> Gaye. hiçbir kişisel veri toplamaz.</p>
+<p>Hesap oluşturmanız gerekmez. Uygulama hiçbir sunucuya bağlanmaz. Seçtiğiniz gayeler, akşam değerlendirmeleriniz ve favori sözleriniz yalnızca kendi cihazınızda saklanır ve cihazınızdan hiçbir zaman çıkmaz. Reklam yok, takip yok, analitik yok, üçüncü taraf hizmet yok.</p>
+</div>
 
-    <p>Aboneliklerin yönetimi ve uygulama içi satın alma işlemleri <strong>RevenueCat</strong> altyapısı ve Apple'ın uygulama içi satın alma sistemi üzerinden yürütülür.</p>
+<p>Bu gizlilik politikası, Gaye. mobil uygulamasının verilerinizi nasıl ele aldığını açıklar. Uygulamayı kullanarak bu politikada belirtilen esasları kabul etmiş olursunuz.</p>
 
-    <ul>
-        <li>Ödeme bilgileriniz (örneğin kredi kartı bilgileri) tarafımızca görülmez ve saklanmaz.</li>
-        <li>Ödeme işlemleri Apple tarafından güvenli şekilde işlenir.</li>
-        <li>RevenueCat, abonelik durumunun doğrulanması ve yönetimi için sınırlı teknik veriler işler.</li>
-    </ul>
+<hr>
 
-    <h2>5. Bildirimler</h2>
-    <p>Uygulama, yalnızca kullanıcıya hatırlatma sunabilmek amacıyla <strong>bildirim izni</strong> isteyebilir.</p>
-    <ul>
-        <li>Bildirimler <strong>yerel bildirim (local notification)</strong> olarak çalışır.</li>
-        <li>Push bildirim altyapısı kullanılmamaktadır.</li>
-        <li>Bildirim iznini dilediğiniz zaman cihaz ayarlarınızdan kapatabilirsiniz.</li>
-    </ul>
+<h2>1. Toplanan Bilgiler</h2>
 
-    <h2>6. Reklam, Takip ve Üçüncü Taraf Paylaşımı</h2>
-    <p>Uygulama içerisinde reklam bulunmamaktadır. Kullanıcılar, uygulamalar veya web siteleri arasında davranışsal reklamcılık amacıyla takip edilmez.</p>
+<p><strong>Gaye. sizden hiçbir bilgi toplamaz.</strong></p>
 
-    <p>Verileriniz satılmaz. Ancak uygulamanın çalışması için aşağıdaki üçüncü taraf hizmet sağlayıcılar kullanılır:</p>
-    <ul>
-        <li><strong>Supabase</strong> – kullanıcı hesabı, giriş/kayıt süreçleri ve bazı uygulama verilerinin saklanması için</li>
-        <li><strong>RevenueCat</strong> – aboneliklerin yönetimi ve doğrulanması için</li>
-        <li><strong>OpenAI</strong> – yapay zeka sohbet botu ve karakter analizi özelliklerinin çalıştırılması için</li>
-    </ul>
+<p>Uygulama şunların hiçbirini istemez, almaz veya iletmez:</p>
 
-    <h2>7. Veri Güvenliği</h2>
-    <p>Kullanıcı verilerini korumak için makul teknik ve organizasyonel önlemler alınmaktadır. Bununla birlikte, internet üzerinden yapılan hiçbir veri aktarımının veya elektronik depolama yönteminin tamamen kusursuz güvenlik sağlayacağı garanti edilemez.</p>
+<ul>
+<li>Ad, e-posta adresi veya kullanıcı adı</li>
+<li>Telefon numarası veya adres bilgisi</li>
+<li>Konum bilgisi</li>
+<li>Kişiler, fotoğraflar, kamera veya mikrofon erişimi</li>
+<li>Cihaz kimliği veya reklam kimliği</li>
+<li>Kullanım istatistikleri, çökme raporları veya analitik veri</li>
+</ul>
 
-    <h2>8. Kullanıcı Hakları (KVKK)</h2>
-    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında aşağıdaki haklara sahipsiniz:</p>
-    <ul>
-        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-        <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
-        <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-        <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri öğrenme</li>
-        <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme</li>
-        <li>Kişisel verilerinizin silinmesini veya yok edilmesini isteme</li>
-        <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
-    </ul>
-    <p>Bu haklarınızı kullanmak için <strong>gaye.app.contact@gmail.com</strong> adresinden bizimle iletişime geçebilirsiniz.</p>
+<p>Gaye. bir hesap sistemi içermez. Giriş yapmanız veya kayıt olmanız gerekmez.</p>
 
-    <h2>9. Hesap ve Veri Silme</h2>
-    <p>Kullanıcı hesabınızı ve ilişkili verilerinizi uygulama içinden silme talebinde bulunabilirsiniz. Veri silme talepleriyle ilgili destek almak için aşağıdaki iletişim adresinden bizimle iletişime geçebilirsiniz.</p>
+<hr>
 
-    <h2>10. Yaş Sınırı</h2>
-    <p>Uygulama <strong>9 yaş ve üzeri</strong> kullanıcılar için uygundur. 9 yaşın altındaki kişiler tarafından kullanılmak üzere tasarlanmamıştır.</p>
+<h2>2. Cihazınızda Saklanan Veriler</h2>
 
-    <h2>11. Bu Politikanın Güncellenmesi</h2>
-    <p>Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncellenen sürüm Uygulama içinde veya ilgili sayfada yayınlandığı tarihten itibaren geçerli olur.</p>
+<p>Uygulamanın çalışması için bazı bilgiler <strong>yalnızca cihazınızda</strong> saklanır:</p>
 
-    <h2>12. İletişim</h2>
-    <p>Bu Gizlilik Politikası ile ilgili sorularınız için bizimle şu adresten iletişime geçebilirsiniz:</p>
-    <p><strong>gaye.app.contact@gmail.com</strong></p>
+<ul>
+<li>Seçtiğiniz günlük gayeler</li>
+<li>Akşam değerlendirmeleriniz</li>
+<li>Favorilerinize eklediğiniz ilham sözleri</li>
+<li>Bildirim tercihleriniz</li>
+</ul>
 
-    <footer>
-        &copy; 2026 Yasin Simsek
-    </footer>
+<p>Bu veriler cihazınızın kendi güvenli depolama alanında tutulur. Bize veya başka bir tarafa gönderilmez, sunucuda yedeklenmez. Bu verilere yalnızca siz erişebilirsiniz.</p>
+
+<p>Cihazınız iCloud yedeklemesi kullanıyorsa, uygulama verileri diğer uygulama verileriyle birlikte Apple'ın yedeklemesine dahil olabilir. Bu yedekleme tamamen Apple hesabınızın denetimindedir ve Gaye. bu yedeklere erişemez.</p>
+
+<hr>
+
+<h2>3. İnternet Bağlantısı</h2>
+
+<p>Gaye. çalışmak için internet bağlantısı gerektirmez ve kendiliğinden hiçbir ağ isteği yapmaz. Uygulamayı uçak modunda dahi eksiksiz kullanabilirsiniz.</p>
+
+<p>Uygulama yalnızca siz açıkça bir bağlantıya dokunduğunuzda tarayıcınızı açar (destek sayfası, bu gizlilik politikası ve kullanım koşulları). Bu durumda tarayıcınıza geçmiş olursunuz ve ilgili sitenin kendi politikaları geçerli olur.</p>
+
+<hr>
+
+<h2>4. Bildirimler</h2>
+
+<p>Gaye. yalnızca <strong>yerel bildirimler</strong> kullanır.</p>
+
+<ul>
+<li>Bildirimler cihazınız üzerinde planlanır; sunucudan gönderilmez</li>
+<li>Push notification altyapısı kullanılmaz</li>
+<li>Günlük gaye ve akşam ritüeline davet amacı taşır</li>
+<li>Uygulama içi ayarlardan istediğiniz zaman kapatabilirsiniz</li>
+</ul>
+
+<p>Uygulamanın istediği tek izin bildirim iznidir. Bu izni vermeseniz de uygulamanın tüm özellikleri çalışır.</p>
+
+<hr>
+
+<h2>5. Üçüncü Taraf Hizmetler</h2>
+
+<p><strong>Gaye. hiçbir üçüncü taraf hizmeti kullanmaz.</strong></p>
+
+<p>Uygulamada analitik aracı, reklam ağı, çökme raporlama servisi, yapay zeka servisi veya herhangi bir üçüncü taraf yazılım geliştirme kiti (SDK) bulunmaz.</p>
+
+<hr>
+
+<h2>6. Reklamlar</h2>
+
+<p>Gaye. reklam göstermez.</p>
+
+<hr>
+
+<h2>7. Uygulama İçi Satın Alma</h2>
+
+<p>Gaye. tamamen ücretsizdir. Uygulama içi satın alma, abonelik veya ücretli özellik bulunmaz. Tüm gaye kategorileri ve tüm özellikler herkese açıktır.</p>
+
+<hr>
+
+<h2>8. Verilerinizi Silme</h2>
+
+<p>Verileriniz üzerinde tam denetime sahipsiniz:</p>
+
+<ul>
+<li><strong>Ayarlar &rsaquo; verilerimi sil</strong> seçeneğiyle tüm gayelerinizi, değerlendirmelerinizi ve favorilerinizi kalıcı olarak silebilirsiniz.</li>
+<li>Uygulamayı cihazınızdan kaldırdığınızda uygulamaya ait tüm veriler de silinir.</li>
+</ul>
+
+<p>Bizde saklanan hiçbir veriniz olmadığı için silinmesini talep etmeniz gereken bir kayıt bulunmaz.</p>
+
+<hr>
+
+<h2>9. Önceki Sürümler Hakkında</h2>
+
+<p>Gaye.'nin daha önceki sürümlerinde hesap oluşturma, yapay zeka destekli sohbet ve abonelik özellikleri bulunuyordu. Bu sürümlerde e-posta adresi gibi bilgiler bir sunucuda saklanıyordu.</p>
+
+<p>Bu özelliklerin tamamı kaldırılmıştır. Önceki sürümlerde toplanmış olan kullanıcı verileri ve bunları barındıran altyapı silinmiştir. Uygulamayı güncellediğinizde cihazınızdaki eski sohbet geçmişi de kaldırılır; seçtiğiniz gayeler ve değerlendirmeleriniz ise korunur.</p>
+
+<hr>
+
+<h2>10. Veri Güvenliği</h2>
+
+<p>Verileriniz cihazınızdan hiç ayrılmadığı için aktarım sırasında ele geçirilme veya sunucu tarafında sızma riski bulunmaz. Cihazınızdaki verilerin güvenliği, işletim sisteminizin sağladığı koruma ve cihaz kilidiniz tarafından sağlanır.</p>
+
+<hr>
+
+<h2>11. Çocukların Gizliliği</h2>
+
+<p>Gaye., 13 yaşın altındaki çocuklara yönelik değildir. Uygulama hiç kimseden veri toplamadığı için çocuklara ait veri de toplamaz.</p>
+
+<hr>
+
+<h2>12. Politika Değişiklikleri</h2>
+
+<p>Bu politika zaman zaman güncellenebilir. Önemli bir değişiklik olduğunda bu sayfadaki "Son güncelleme" tarihi yenilenir.</p>
+
+<hr>
+
+<h2>13. İletişim</h2>
+
+<p>Sorularınız için: <a href="mailto:gaye.app.contact@gmail.com">gaye.app.contact@gmail.com</a></p>
+
+<hr>
+
+<h2 class="en">Summary in English</h2>
+
+<p class="en">Gaye. collects no personal data. The app has no account system, makes no network requests and contains no third-party SDKs, analytics, tracking or advertising. Your daily intentions, evening reflections and saved quotes are stored only on your device and never leave it. The app works fully offline. The only permission requested is for local notifications, which are scheduled on-device and can be disabled at any time. You can permanently erase all app data from within the app via Settings &rsaquo; "verilerimi sil". Earlier versions of the app included accounts, AI chat and a subscription; those features and the data collected through them have been removed. Contact: gaye.app.contact@gmail.com</p>
 
 </body>
 </html>
